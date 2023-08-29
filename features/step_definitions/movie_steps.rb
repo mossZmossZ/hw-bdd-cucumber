@@ -59,6 +59,7 @@ Then /^debug$/ do
   1 # intentionally force debugger context in this method
 end
 
+
 Then /^debug javascript$/ do
   # Use this to write "Then debug" in your scenario to open a JS console
   page.driver.debugger
