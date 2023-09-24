@@ -9,6 +9,13 @@ gem 'uglifier', '>= 2.7.1'
 
 gem 'jquery-rails'
 
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection", "~> 1.0"
+
+
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -21,6 +28,7 @@ group :development, :test do
   gem 'cucumber-rails', require: false
   gem 'rspec-rails'
 
+  gem 'dotenv-rails'
   gem 'pry'
   gem 'pry-byebug'
 
@@ -40,3 +48,4 @@ group :test do
   gem 'capybara'         # lets Cucumber pretend to be a web browser
   gem 'launchy'          # a useful debugging aid for user stories
 end
+
